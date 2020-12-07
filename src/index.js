@@ -12,16 +12,8 @@ ReactDOM.render(
 );
 
 var myNewP = document.createElement("p")
-myNewP.innerHTML = "This is a paragraph."
+myNewP.innerHTML = "Recent Additions"
 
-ReactDOM.render(
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-  </ul>,
-  document.getElementById("root")
-)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
