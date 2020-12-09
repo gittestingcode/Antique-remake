@@ -1,9 +1,16 @@
 .App {
-  text-align: center;
+  background-image: url(brownfloral.jpg);
+  background-repeat: repeat-xy;
+  background-attachment: fixed;
+}
+
+.App-wall {
+  display: table;
+  margin: 0 auto;
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,19 +21,47 @@
 }*/
 
 .App-header {
-  background-color: #C08A00;
-  min-height: 20vh;
+  background-color: #382900;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  height: 130px;
+  width: 725px;
+  border-bottom: 12px solid #282400;
+}
+
+.App-exchange {
+  height: auto;
+  width: 170px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.Street {
+  color: #C08A00;
+  font-size: large;
+  line-height: 0%;
+  margin-left: 250px;
+  margin-top: 40px;
+}
+
+.App-bodypage {
+  background-color: #C08A00;
+  height: 1080px;
+  width: 725px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+}
+
+.App-bottom {
+  background-color: #C08A00;
+  position: fixed;
+  bottom: 0;
+  width: 725px;
 }
 
 .App-collage {
   background-color: #C08A00;
-  
+  border-bottom: 12px solid #282400;
 }
 
 .Mantels-link {
