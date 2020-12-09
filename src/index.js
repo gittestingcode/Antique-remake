@@ -4,12 +4,19 @@ import { BrowserRouter as Router,
 Route, Switch } from "react-router-dom";
 import './index.css';
 import App from './App';
-import AppMantels from './AppMantels.js';
+import AppMantels from './AppMantels';
+import AppBars from './AppBars';
+import AppDoors from './AppDoors';
+import AppMisc from './AppMisc';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <AppMantels />
+    <AppBars />
+    <AppDoors />
+    <AppMisc />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -20,6 +27,9 @@ const rootElement = document.getElementById("root");
        <Switch>
         <Route exact path="/" component={App} />
         <Route path="/AppMantels" component={AppMantels} />
+        <Route path="/AppBars" component={AppBars} />
+        <Route path="/AppDoors" component={AppDoors} />
+        <Route path="/AppMisc" component={AppMisc} />
       </Switch>
       </Router>,
       rootElement

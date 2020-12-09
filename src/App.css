@@ -135,6 +135,10 @@
 .Doors-link:hover, .Misc-link:hover {
   background-color: #271C00;
 }
+.Mantels-link:active, .Bars-link:active,
+.Doors-link:active, .Misc-link:active {
+  background-color: #A37500;
+}
 
 /*@keyframes App-logo-spin {
   from {

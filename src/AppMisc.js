@@ -5,7 +5,7 @@ import collage from './collageBIG2.jpg';
 import bottom from './Bottombar.svg';
 import './App.css';
 
-function AppMantels() {
+function AppMisc() {
   return (
     <div className="App">
       <div className="App-wall">
@@ -17,15 +17,15 @@ function AppMantels() {
           <p>
             721 North Second Street</p>
           <p>
-            </p>
+            Philadelphia, PA 19123</p>
             </div>
         </header>
         <body className="App-body">
           <div className="App-bodypage">
             <img src={collage} className="App-collage" alt="collage" />
             <Router>
-            <button class="Mantels-link">MANTELS 
-            </button>
+            <Link to="/AppMantels"><button class="Mantels-link">MANTELS 
+            </button></Link>
             <Link to="/AppBars"><button class="Bars-link">BARS
             </button></Link>
             <Link to="/AppDoors"><button class="Doors-link">DOORS
@@ -44,4 +44,4 @@ function AppMantels() {
   );
 }
 
-export default AppMantels;
+export default AppMisc;

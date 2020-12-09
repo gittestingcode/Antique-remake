@@ -23,11 +23,16 @@ function App() {
         <body className="App-body">
           <div className="App-bodypage">
             <img src={collage} className="App-collage" alt="collage" />
-            <Router><Link to="/AppMantels"><button class="Mantels-link">MANTELS 
-            </button></Link></Router>
-            <button class="Bars-link">BARS</button>
-            <button class="Doors-link">DOORS</button>
-            <button class="Misc-link">MISC</button>
+            <Router>
+            <Link to="/AppMantels"><button class="Mantels-link">MANTELS 
+            </button></Link>
+            <Link to="/AppBars"><button class="Bars-link">BARS
+            </button></Link>
+            <Link to="/AppDoors"><button class="Doors-link">DOORS
+            </button></Link>
+            <Link to="/AppMisc"><button class="Misc-link">MISC
+            </button></Link>
+            </Router>
             <div className="App-bottom">
               <img src={bottom} className="App-bottom" alt="bottom" />
               <button class="Top"></button>
