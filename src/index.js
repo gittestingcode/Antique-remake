@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router,
+Route, Switch } from "react-router-dom";
 import './index.css';
 import App from './App';
+import AppMantels from './AppMantels.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -11,9 +14,16 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-var myNewP = document.createElement("p")
-myNewP.innerHTML = "Recent Additions"
-
+const rootElement = document.getElementById("root");
+    ReactDOM.render(
+      <Router>
+       <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/AppMantels" component={AppMantels} />
+      </Switch>
+      </Router>,
+      rootElement
+    );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -40,8 +40,8 @@
   color: #C08A00;
   font-size: large;
   line-height: 0%;
-  margin-left: 250px;
-  margin-top: 40px;
+  margin-left: 300px;
+  margin-top: 50px;
 }
 
 .App-bodypage {
@@ -58,6 +58,17 @@
   bottom: 0;
   width: 725px;
 }
+.Top {
+  position: relative;
+  bottom: 18px;
+  left: 12px;
+  border-radius: 25px 25px 10px 10px;
+  font-size: 16px;
+  padding: 28px 26px;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
 
 .App-collage {
   background-color: #C08A00;
@@ -65,7 +76,64 @@
 }
 
 .Mantels-link {
+  position: absolute;
+  top: 17px;
+  left: 70px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #382900;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
   color: #FFB800;
+}
+.Bars-link {
+  position: absolute;
+  top: 17px;
+  left: 170px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #382900;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  color: #FFB800;
+}
+.Doors-link {
+  position: absolute;
+  top: 17px;
+  left: 261px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #382900;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  color: #FFB800;
+}
+.Misc-link {
+  position: absolute;
+  top: 17px;
+  left: 351px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #382900;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 16px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  color: #FFB800;
+}
+.Mantels-link:hover, .Bars-link:hover,
+.Doors-link:hover, .Misc-link:hover {
+  background-color: #271C00;
 }
 
 /*@keyframes App-logo-spin {

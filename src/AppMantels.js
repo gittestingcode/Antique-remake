@@ -1,5 +1,3 @@
-import React from "react";
-import {Link, BrowserRouter as Router } from "react-router-dom";
 import exchange from './AAExchangelogo.jpg';
 import collage from './collageBIG2.jpg';
 import bottom from './Bottombar.svg';
@@ -23,8 +21,7 @@ function App() {
         <body className="App-body">
           <div className="App-bodypage">
             <img src={collage} className="App-collage" alt="collage" />
-            <Router><Link to="/AppMantels"><button class="Mantels-link">MANTELS 
-            </button></Link></Router>
+            <button class="Mantels-link">MANTELS</button>
             <button class="Bars-link">BARS</button>
             <button class="Doors-link">DOORS</button>
             <button class="Misc-link">MISC</button>
