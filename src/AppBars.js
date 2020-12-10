@@ -3,6 +3,7 @@ import {Link, BrowserRouter as Router } from "react-router-dom";
 import exchange from './AAExchangelogo.jpg';
 import collage from './collageBIG2.jpg';
 import bottom from './Bottombar.svg';
+import bars1 from './bars1.jpg';
 import './App.css';
 
 function AppBars() {
@@ -10,12 +11,14 @@ function AppBars() {
     <div className="App">
       <div className="App-wall">
         <header className="App-header">
+          <a name="top"></a>
           <div className="App-exchange">
           <img src={exchange} className="App-logo" alt="exchange" />
+          <Link to="/"><button class="Exchange-btn"></button></Link>
           </div>
           <div className="Street">
           <p>
-            </p>
+            721 North Second Street</p>
           <p>
             Philadelphia, PA 19123</p>
             </div>
@@ -23,17 +26,22 @@ function AppBars() {
         <body className="App-body">
           <div className="App-bodypage">
             <img src={collage} className="App-collage" alt="collage" />
-            <Router>
             <Link to="/AppMantels"><button class="Mantels-link">MANTELS 
             </button></Link>
-            <Link to="/AppBars"><button class="Bars-link">BARS
+            <button class="Bars-link">BARS
+            </button>
+            <Link to="/AppDoors"><button class="Doors-link">DOORS
             </button></Link>
-            <button class="Doors-link">DOORS</button>
-            <button class="Misc-link">MISC</button>
-            </Router>
+            <Link to="/AppMisc"><button class="Misc-link">MISC
+            </button></Link>
+            <div><img src={bars1} className="Stock" alt="bars1" /></div>
+            <div className="ContentTitle">
+            <p>
+            Bars</p>
+            </div>
             <div className="App-bottom">
               <img src={bottom} className="App-bottom" alt="bottom" />
-              <button class="Top"></button>
+              <a href="#top"><button class="Top"></button></a>
             </div>
           </div>
         </body>

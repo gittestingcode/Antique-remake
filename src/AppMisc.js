@@ -3,6 +3,7 @@ import {Link, BrowserRouter as Router } from "react-router-dom";
 import exchange from './AAExchangelogo.jpg';
 import collage from './collageBIG2.jpg';
 import bottom from './Bottombar.svg';
+import misc1 from './misc1.jpg';
 import './App.css';
 
 function AppMisc() {
@@ -10,8 +11,10 @@ function AppMisc() {
     <div className="App">
       <div className="App-wall">
         <header className="App-header">
+          <a name="top"></a>
           <div className="App-exchange">
           <img src={exchange} className="App-logo" alt="exchange" />
+          <Link to="/"><button class="Exchange-btn"></button></Link>
           </div>
           <div className="Street">
           <p>
@@ -23,19 +26,22 @@ function AppMisc() {
         <body className="App-body">
           <div className="App-bodypage">
             <img src={collage} className="App-collage" alt="collage" />
-            <Router>
             <Link to="/AppMantels"><button class="Mantels-link">MANTELS 
             </button></Link>
             <Link to="/AppBars"><button class="Bars-link">BARS
             </button></Link>
             <Link to="/AppDoors"><button class="Doors-link">DOORS
             </button></Link>
-            <Link to="/AppMisc"><button class="Misc-link">MISC
-            </button></Link>
-            </Router>
+            <button class="Misc-link">MISC
+            </button>
+            <div><img src={misc1} className="Stock" alt="misc1" /></div>
+            <div className="ContentTitle">
+            <p>
+            Miscellaneous</p>
+            </div>
             <div className="App-bottom">
               <img src={bottom} className="App-bottom" alt="bottom" />
-              <button class="Top"></button>
+              <a href="#top"><button class="Top"></button></a>
             </div>
           </div>
         </body>
