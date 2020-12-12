@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imagine-enter {
+  opacity: 0.01;
+}
+
+.imagine-enter.imagine-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.imagine-leave {
+  opacity: 1;
+}
+
+.imagine-leave.imagine-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.imagine-appear {
+  opacity: 0.01;
+}
+
+.imagine-appear.imagine-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

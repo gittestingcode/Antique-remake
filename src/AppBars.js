@@ -1,9 +1,9 @@
 import React from "react";
 import {Link, BrowserRouter as Router } from "react-router-dom";
-import exchange from './AAExchangelogo.jpg';
-import collage from './collageBIG2.jpg';
-import bottom from './Bottombar.svg';
-import bars1 from './bars1.jpg';
+import exchange from './Img/AAExchangelogo.jpg';
+import collage from './Img/collageBIG2.jpg';
+import bottom from './Img/Bottombar.svg';
+import bars1 from './Img/bars1.jpg';
 import './App.css';
 
 function AppBars() {

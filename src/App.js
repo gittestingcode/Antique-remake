@@ -1,12 +1,14 @@
 import React from "react";
 import {Link, BrowserRouter as Router } from "react-router-dom";
-import exchange from './AAExchangelogo.jpg';
-import collage from './collageBIG2.jpg';
-import bottom from './Bottombar.svg';
-import p1content1 from './p1content1.jpg';
-import p1content2 from './p1content2.jpg';
-import p1content3 from './p1content3.jpg';
+import exchange from './Img/AAExchangelogo.jpg';
+import collage from './Img/collageBIG2.jpg';
+import bottom from './Img/Bottombar.svg';
+import p1content1 from './Img/p1content1.jpg';
+import p1content2 from './Img/p1content2.jpg';
+import p1content3 from './Img/p1content3.jpg';
 import './App.css';
+import './index.css';
+import { CSSTransition } from "react-transition-group";
 
 function App() {
   return (
@@ -27,7 +29,15 @@ function App() {
         </header>
         <body className="App-body">
           <div className="App-bodypage">
+            <CSSTransition
+            transitionName="imagine"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnter={false}
+            transitionLeave={true}
+            transitionLeaveTimeout={300}>
             <img src={collage} className="App-collage" alt="collage" />
+            </CSSTransition>
             <Link to="/AppMantels"><button class="Mantels-link">MANTELS 
             </button></Link>
             <Link to="/AppBars"><button class="Bars-link">BARS
